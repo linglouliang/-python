@@ -1,0 +1,19 @@
+#!/usr/bin/python
+#!coding=utf-8
+f=int(input('Please enter a number f:'))
+g=int(input('Please enter which prime number you want g:'))
+b=0
+q=0
+for i in range(2,f):
+    for k in range(2,i):
+        if i%k==0:
+           break
+    else:
+        q+=1
+        a=i
+        c=a+b
+        b=c
+        if q==g:
+            print ('the prime number is :',i)
+print('The  number of prime Numbers is:',q)
+print('The sum of prime Numbers is:',c)
